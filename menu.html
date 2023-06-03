@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>order list</title>
+    </head>
+    <style>
+        #menu {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px 40px;
+  background: rgb(245, 242, 242);
+  min-height: 100vh;
+}
+.heading {
+  background: rgb(245, 242, 242);
+  color: #373333;
+  margin-bottom: 30px;
+  padding: 60px 0 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+.heading > h3 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+.card {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+}
+.card img {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  border-radius: 15px 15px 0 0;
+}
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+.details-sub {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+  text-align: right;
+}
+.details p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 25px;
+  align-self: stretch;
+}
+.details button {
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  width: 180px;
+}
+
+    </style>
+    <body>
+        <div id="menu">
+            <div class="heading">
+    
+                <h3 style="background-color: black;color: white;">Today's Special</h3>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.-F_ggET0Ru7MsDPAUnE1pQHaE8?w=261&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>French fries</h5>
+                        <h5 class="price">Rs. 90 </h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.FohhXOTlSaiKV3Pi7-4FIQHaEK?w=326&h=183&c=7&r=0&o=5&dpr=1.5&pid=1.7"alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Veg Roll</h5>
+                        <h5 class="price"> Rs.110</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.r0yu0v5Xf5IPwXyE4SOLQAHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Noodels</h5>
+                        <h5 class="price"> Rs.110 </h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.W5A88VvmwibfNW2EqDynwwHaE0?w=298&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Burger</h5>
+                        <h5 class="price"> Rs.40</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.M5GUgLsJQKY2PyUZCzXhPAHaE8?w=278&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7"alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Moomos</h5>
+                        <h5 class="price"> Rs.70 </h5>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.wn8S-qKY21qAy7YUHdJM6gHaE8?w=284&h=189&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                    alt="">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Chicken Burger</h5>
+                        <h5 class="price"> Rs.80 </h5>
+                    </div>
+                  
+                </div>
+            </div>
+            
+    </body>
+</html>

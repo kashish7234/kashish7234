@@ -1,0 +1,199 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restraunt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav{
+    background-color:black;
+    box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+
+  color: #000;
+  opacity:calc();
+  height: 15%;
+  z-index: 12;
+}
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    }
+
+li {
+  display: inline;
+  align-items: right;
+}
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: black;
+}
+
+#about {
+  padding: 25px 0;
+}
+.about_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+.about_column {
+  flex: 1;
+}
+#btn1 {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+.about_column img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: fill;
+  margin: auto;
+}
+.title {
+  color: #373333;
+  margin-bottom: 30px;
+  padding: 50px 0 30px 0;
+  text-align: center;
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body id="home">
+    <center></center><nav>
+      <div class="navbar-container container">
+          
+         
+          <ul class="menu-items">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="#testimonials">ORDER</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <h1 class="logo">PIZZA ZONE</h1>
+      </div>
+  </nav>
+<br><br><br>  <SEction><img src="https://th.bing.com/th/id/OIP.ZAaoAHT38cD5MUv-6JF6xAHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="100%" height="450"></SEction>
+
+<div id="about">
+  <h1 class="title">About us</h1>
+  <div class="about_row">
+      <div class="about_column">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aperiam id saepe
+              natus tempore adipisci neque incidunt vel nam, distinctio, eos labore cupiditate assumenda
+              doloremque. Assumenda illo delectus aliquid libero, quisquam vero facere molestias neque
+              similique, aperiam dolores ex mollitia nobis nostrum blanditiis autem qui itaque quos, nisi
+              dolore.</p>
+          <button id="btn1">learn more</button>
+      </div>
+      <div class="about_column">
+          <img src="https://img.freepik.com/free-photo/chef-making-ok-sign-white-background_1368-2804.jpg?w=2000
+" alt="">
+      </div>
+  </div>
+</div>
+   <script>function createResponseKey() {
+    // Generate a random string of 32 characters.
+    const key = Math.random().toString(36).substring(2, 36);
+  
+    // Save the key in the browser's localStorage.
+    localStorage.setItem("responseKey", key);
+  
+    // Return the key.
+    return key;
+  }
+  </script>
+    <footer id="footer">
+      <h2>Restraunt &copy; all rights reserved</h2>
+    </footer>
+  </center>
+  </body>
+  
+</html>
